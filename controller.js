@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 
 mongoose.connect("mongodb+srv://express:express1234@covid19.z2ije.mongodb.net/PaseBlog?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
 
-const Post = mongoose.model('post', {post: String, image: String, title: String, catogories:[String], tags:[String], date: String, author: String});
+const Post = mongoose.model('post', {post: String, image: String, title: String, categories:[String], tags:[String], date: String, author: String});
 
 
 //get all post
